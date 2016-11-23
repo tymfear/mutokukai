@@ -2,7 +2,7 @@
 
 (function(){
   angular.module('mutokukai')
-    .config([ '$stateProvider','$urlRouterProvider', '$locationProvider',
+    .config(['$stateProvider', '$urlRouterProvider', '$locationProvider',
       function($stateProvider, $urlRouterProvider, $locationProvider){
         $stateProvider
           .state('home', {
@@ -24,6 +24,10 @@
           .state('contacts', {
             url: '/contacts',
             templateUrl: 'assets/js/contacts/contacts.html'
+          })
+          .state('schedule', {
+            url: '/schedule',
+            templateUrl: 'assets/js/schedule/schedule.html'
           });
 
         $locationProvider.html5Mode({enabled:true, requireBase: false});
