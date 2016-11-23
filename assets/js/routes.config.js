@@ -30,7 +30,7 @@
             templateUrl: 'assets/js/schedule/schedule.html'
           });
 
-        $locationProvider.html5Mode({enabled:true, requireBase: false});
+        // $locationProvider.html5Mode({enabled:true, requireBase: false});
 
         $urlRouterProvider.otherwise('/')
       }]);
