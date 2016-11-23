@@ -24,10 +24,6 @@
           .state('contacts', {
             url: '/contacts',
             templateUrl: 'assets/js/contacts/contacts.html'
-          })
-          .state('schedule', {
-            url: '/schedule',
-            templateUrl: 'assets/js/schedule/schedule.html'
           });
 
         $locationProvider.html5Mode({enabled:true, requireBase: false});
