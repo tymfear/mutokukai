@@ -1,0 +1,17 @@
+{
+  "name": "mutokukai",
+  "homepage": "https://github.com/tymfear/mutokukai",
+  "authors": [
+    "Tymur Daudov <tymfear@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

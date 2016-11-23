@@ -1,0 +1,16 @@
+
+body {
+  padding-bottom: 2rem;
+}
+
+.navbar {
+  border-radius: 0;
+}
+
+.banner img{
+  width: 100%;
+}
+
+img{
+  max-width: 100%;
+}

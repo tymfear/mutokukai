@@ -1,72 +1,42 @@
 <!DOCTYPE html>
-<!-- saved from url=(0049)http://v4-alpha.getbootstrap.com/examples/cover/# -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="http://v4-alpha.getbootstrap.com/favicon.ico">
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-    <title>Cover Template for Bootstrap</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="assets/favicon.ico">
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/styles/bootstrap.min.css" rel="stylesheet">
+  <title>Мутокукай Харьков</title>
 
-    <!-- Custom styles for this template -->
-    <link href="vendor/styles/cover.css" rel="stylesheet">
-  <script>var tvt = tvt || {}; tvt.captureVariables = function (a){for(var b=new Date,c={},d=Object.keys(a||{}),e=0,f;f=d[e];e++)if(a.hasOwnProperty(f)&&
-"undefined"!=typeof a[f])try{var g=[];c[f]=JSON.stringify(a[f],function(a,b){try{if("function"!==typeof b){if("object"===typeof b&&null!==b){if(b instanceof HTMLElement||b instanceof Node||-1!=g.indexOf(b))return;g.push(b)}return b}}catch(c){}})}catch(l){}a=document.createEvent("CustomEvent");a.initCustomEvent("TvtRetrievedVariablesEvent",!0,!0,{variables:c,date:b});window.dispatchEvent(a)};window.setTimeout(function() {tvt.captureVariables({'dataLayer': window['dataLayer']})}, 2000);</script></head>
+  <link href="vendor/styles/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/styles/jumbotron.css" rel="stylesheet">
+</head>
 
-  <body>
+<body ng-app="mutokukai">
 
-    <div class="site-wrapper">
+<div ng-include="'assets/js/nav/nav.html'"></div>
 
-      <div class="site-wrapper-inner">
+<div class="container">
+  <div class="banner">
+    <img src="assets/images/header-mutokukai.jpg" alt="logo">
+  </div>
+</div>
 
-        <div class="cover-container">
+<ui-view></ui-view>
 
-          <div class="masthead clearfix">
-            <div class="inner">
-              <h3 class="masthead-brand">Cover</h3>
-              <nav class="nav nav-masthead">
-                <a class="nav-link active" href="http://v4-alpha.getbootstrap.com/examples/cover/#">Home</a>
-                <a class="nav-link" href="http://v4-alpha.getbootstrap.com/examples/cover/#">Features</a>
-                <a class="nav-link" href="http://v4-alpha.getbootstrap.com/examples/cover/#">Contact</a>
-              </nav>
-            </div>
-          </div>
+<div ng-include="'assets/js/footer/footer.html'"></div>
 
-          <div class="inner cover">
-            <h1 class="cover-heading">Cover your page.</h1>
-            <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
-            <p class="lead">
-              <a href="http://v4-alpha.getbootstrap.com/examples/cover/#" class="btn btn-lg btn-secondary">Learn more</a>
-            </p>
-          </div>
 
-          <div class="mastfoot">
-            <div class="inner">
-              <p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
-            </div>
-          </div>
+<script src="bower_components/angular/angular.min.js"></script>
+<script
+    src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+</body>
 
-        </div>
-
-      </div>
-
-    </div>
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="vendor/js/jquery.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="vendor/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
-    <script src="vendor/js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="vendor/js/ie10-viewport-bug-workaround.js"></script>
-  
-
-</body></html>
+<!--Routes-->
+<script src="assets/js/application.js"></script>
+<script src="assets/js/routes.config.js"></script>
+</html>
