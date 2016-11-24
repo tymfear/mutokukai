@@ -6,7 +6,7 @@
       function($stateProvider, $urlRouterProvider, $locationProvider){
         $stateProvider
           .state('home', {
-            url: '/home',
+            url: '/',
             templateUrl: 'assets/js/home/home.html'
           })
           .state('aikido', {
@@ -26,8 +26,8 @@
             templateUrl: 'assets/js/contacts/contacts.html'
           });
 
-        // $locationProvider.html5Mode({enabled:true, requireBase: false});
+        $locationProvider.html5Mode({enabled:true, requireBase: false});
 
-        $urlRouterProvider.otherwise('/home')
+        $urlRouterProvider.otherwise('/')
       }]);
 })();
