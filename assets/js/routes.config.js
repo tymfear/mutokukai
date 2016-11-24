@@ -26,7 +26,7 @@
             templateUrl: 'assets/js/contacts/contacts.html'
           });
 
-        // $locationProvider.html5Mode({enabled:true, requireBase: false});
+        $locationProvider.html5Mode({enabled:true});
 
         $urlRouterProvider.otherwise('/')
       }]);
