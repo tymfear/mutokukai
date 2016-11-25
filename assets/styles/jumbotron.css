@@ -16,6 +16,10 @@ body {
   padding: 0;
 }
 
+.banner-container {
+  padding: 0;
+}
+
 .banner img{
   width: 100%;
 }
