@@ -1,34 +1,37 @@
-<nav class="navbar navbar-static-top navbar-dark bg-inverse">
-  <a class="navbar-brand"
-     ui-sref="home">
-    Мутокукай Харьков
-  </a>
-  <ul class="nav navbar-nav">
-    <li class="nav-item">
-      <a class="nav-link"
-         ui-sref="home"
-         ui-sref-active="active">Главная
+<header class="navbar navbar-static-top navbar-dark bg-inverse">
+  <div class="container container-grey">
+    <div class="logo">
+      <div class="logo-container">
+        <img src="/assets/images/logo-red.svg" alt="">
+      </div>
+      <a class="navbar-brand" ui-sref="home">
+        Mutokukai <span>Харьков</span>
       </a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link"
-         ui-sref="contacts"
-         ui-sref-active="active">Контакты и расписание</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link"
-         ui-sref="about"
-         ui-sref-active="active">О нас</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link"
-         ui-sref="aikido"
-         ui-sref-active="active">Айкидо</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link"
-         ui-sref="mutokukai"
-         ui-sref-active="active">Мутокукай</a>
-    </li>
-  </ul>
-</nav>
+    </div>
+    <nav>
+      <ul class="nav navbar-nav">
+        <li class="nav-item">
+          <a ui-sref="home"
+             ui-sref-active="active">Главная
+          </a>
+        </li>
+        <li class="nav-item">
+          <a ui-sref="contacts"
+             ui-sref-active="active">Контакты и расписание</a>
+        </li>
+        <li class="nav-item">
+          <a ui-sref="about"
+             ui-sref-active="active">О нас</a>
+        </li>
+        <li class="nav-item">
+          <a ui-sref="aikido"
+             ui-sref-active="active">Айкидо</a>
+        </li>
+        <li class="nav-item">
+          <a ui-sref="mutokukai"
+             ui-sref-active="active">Мутокукай</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>

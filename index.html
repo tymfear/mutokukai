@@ -17,22 +17,23 @@
 </head>
 
 <body ng-app="mutokukai">
+<div class="main">
+  <div ng-include="'assets/js/nav/nav.html'"></div>
 
-<div ng-include="'assets/js/nav/nav.html'"></div>
-
-<div class="container">
-  <div class="banner">
-    <img src="assets/images/header-mutokukai.jpg" alt="logo">
+  <div class="container">
+    <div class="banner">
+      <img src="assets/images/header-mutokukai.jpg" alt="logo">
+    </div>
   </div>
+
+  <ui-view></ui-view>
+
+  <div ng-include="'assets/js/footer/footer.html'"></div>
+
 </div>
-
-<ui-view></ui-view>
-
-<div ng-include="'assets/js/footer/footer.html'"></div>
-
-
 <script src="bower_components/angular/angular.min.js"></script>
-<script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+<script
+    src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
 </body>
 
 <!--Routes-->

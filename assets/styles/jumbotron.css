@@ -1,9 +1,19 @@
 body {
   position: relative;
+  background-color: black;
+}
+
+.container {
+  background-color: white;
+}
+
+.container-grey {
+  background-color: #373a3c;
 }
 
 .navbar {
   border-radius: 0;
+  padding: 0;
 }
 
 .banner img{
@@ -12,4 +22,59 @@ body {
 
 img{
   max-width: 100%;
+}
+
+
+nav {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.logo {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.logo-container img {
+  width: 96px;
+  height: 96px;
+  margin-bottom: -30px;
+  margin-right: 10px;
+}
+
+.navbar-brand{
+  float: none;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.logo span {
+  display: block;
+  font-size: 14px;
+}
+
+.logo-container {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+}
+
+header nav a{
+  display: block;
+  padding: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+header nav a.active, a:hover {
+  color: white;
+  text-decoration: none;
+  background: -webkit-linear-gradient(#666, #373a3c); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#666, #373a3c); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#666, #373a3c); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#666, #373a3c);
+}
+
+.navbar-nav .nav-item+.nav-item {
+  margin: 0;
 }
