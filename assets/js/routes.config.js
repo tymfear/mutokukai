@@ -23,7 +23,9 @@
           })
           .state('contacts', {
             url: '/contacts',
-            templateUrl: 'assets/js/contacts/contacts.html'
+            templateUrl: 'assets/js/contacts/contacts.html',
+            controller: 'ContactsController',
+            controllerAs: 'contacts'
           });
 
         $urlRouterProvider.otherwise('/')

@@ -10,43 +10,23 @@
     </tr>
     </thead>
     <tbody>
-    <tr>
+    <tr ng-repeat="contact in contacts.getContacts()">
       <td>
-        <address>м. Пушкинская (Взрослые)
-          <p>ул. Пушкинская, 79</p>
+        <address>{{contact.subway}} ({{contact.ageCategory}})
+          <p>{{contact.address}}</p>
           <p>
-            <strong class="time-red"> Пн, Ср, Пт, Сб: 6:30 - 8:15</strong>
+            <strong class="time-red">{{contact.schedule}}</strong>
           </p>
         </address></td>
       <td>
-        <p>Даудов Тимур</p>
-        <p>2-й дан Айкидо Айкикай</p>
+        <p>{{contact.instructorName}}</p>
+        <p>{{contact.instructorRank}}</p>
       </td>
       <td>
         <p>
-          Тел: <a href="tel:38-066-212-9026"><strong class="time-red">+38-066-212-9026</strong></a><br>
-          Skype: <a href="skype:tymfear?call"><strong class="time-red">tymfear</strong></a><br>
-          Email: <a href="mailto:tymfear@gmail.com"><strong class="time-red">tymfear@gmail.com</strong></a>
-        </p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <address>м. Университет (Взрослые/Дети)
-          <p>ул. Сумская, 39, Дворец детского и юношеского творчества</p>
-          <p>
-            <strong class="time-red"> Вт, Чт: 18:30 - 19:30</strong>
-          </p>
-        </address></td>
-      <td>
-        <p>Даудов Тимур</p>
-        <p>2-й дан Айкидо Айкикай</p>
-      </td>
-      <td>
-        <p>
-          Тел: <a href="tel:38-066-212-9026"><strong class="time-red">+38-066-212-9026</strong></a><br>
-          Skype: <a href="skype:tymfear?call"><strong class="time-red">tymfear</strong></a><br>
-          Email: <a href="mailto:tymfear@gmail.com"><strong class="time-red">tymfear@gmail.com</strong></a>
+          Тел: <a href="tel:{{contact.phone}}"><strong class="time-red">+{{contact.phone}}</strong></a><br>
+          Skype: <a href="skype:{{contact.skype}}?call"><strong class="time-red">{{contact.skype}}</strong></a><br>
+          Email: <a href="mailto:{{contact.email}}"><strong class="time-red">{{contact.email}}</strong></a>
         </p>
       </td>
     </tr>
