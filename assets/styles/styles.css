@@ -29,7 +29,7 @@ article{
   margin-bottom: 20px;
 }
 
-.h2 {
+.h1, .h2 {
   font-family: "SegoeUIItalic";
 }
 
@@ -164,22 +164,19 @@ main{
 }
 
 .socials-list li {
-  background-color: #E6E6E6;
-  width: 40px;
-  height: 40px;
-  position: relative;
-  border-radius: 50%;
-  margin-right: 5px;
   display: inline-block;
+  text-align: center;
 }
 
 .socials-list i{
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #E6E6E6;
   color: #636363;
-  position: absolute;
-  top: 8px;
-  left: 8px;
   font-size: 23px;
   font-weight: bold;
+  width: 46px;
+  height: 46px
 }
 
 .socials-list a:hover{
