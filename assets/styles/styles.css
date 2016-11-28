@@ -165,3 +165,7 @@ main{
 .socials-list a:hover{
   background: none;
 }
+
+.dotted-list{
+  list-style: disc;
+}
