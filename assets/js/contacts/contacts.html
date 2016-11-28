@@ -1,35 +1,40 @@
-<div class="container">
-  <header class="h1">Контакты</header>
+<main class="container">
+  <section class="row">
+    <div class="col-md-10 offset-md-1">
+      <header class="h1">Контакты</header>
 
-  <table class="table">
-    <thead>
-    <tr>
-      <th>Место и время</th>
-      <th>Инструктор</th>
-      <th>Контакты инструктора</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr ng-repeat="contact in contacts.getContacts()">
-      <td>
-        <address>{{contact.subway}} ({{contact.ageCategory}})
-          <p>{{contact.address}}</p>
-          <time>
-            <strong class="time-red">{{contact.schedule}}</strong>
-          </time>
-        </address></td>
-      <td>
-        <p>{{contact.instructorName}}</p>
-        <p>{{contact.instructorRank}}</p>
-      </td>
-      <td>
-        <p>
-          Тел: <a href="tel:{{contact.phone}}"><strong class="time-red">+{{contact.phone}}</strong></a><br>
-          Skype: <a href="skype:{{contact.skype}}?call"><strong class="time-red">{{contact.skype}}</strong></a><br>
-          Email: <a href="mailto:{{contact.email}}"><strong class="time-red">{{contact.email}}</strong></a>
-        </p>
-      </td>
-    </tr>
-    </tbody>
-  </table>
-</div>
+      <table class="table">
+        <thead>
+        <tr>
+          <th>Место и время</th>
+          <th>Инструктор</th>
+          <th>Контакты инструктора</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="contact in contacts.getContacts()">
+          <td>
+            <address>{{contact.subway}} ({{contact.ageCategory}})
+              <p>{{contact.address}}</p>
+              <time>
+                <strong class="time-red">{{contact.schedule}}</strong>
+              </time>
+            </address>
+          </td>
+          <td>
+            <p>{{contact.instructorName}}</p>
+            <p>{{contact.instructorRank}}</p>
+          </td>
+          <td>
+            <p>
+              Тел: <a href="tel:{{contact.phone}}"><strong class="time-red">+{{contact.phone}}</strong></a><br>
+              Skype: <a href="skype:{{contact.skype}}?call"><strong class="time-red">{{contact.skype}}</strong></a><br>
+              Email: <a href="mailto:{{contact.email}}"><strong class="time-red">{{contact.email}}</strong></a>
+            </p>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+</main>

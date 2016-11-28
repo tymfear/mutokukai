@@ -141,7 +141,8 @@ header nav a.active, header nav a:hover {
   margin-left: -15px;
   font-family: 'SegoeUIItalic';
   line-height: 1.25;
-  padding: 15px 0;
+  padding: 15px 0 15px 15px;
+
 }
 
 .grey-section-text {
