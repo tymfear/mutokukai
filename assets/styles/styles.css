@@ -11,6 +11,24 @@ ol, ul {
   list-style: none;
 }
 
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a, a:hover, a:active, a:focus {
+  color: white;
+  text-decoration: none;
+}
+
+strong {
+  font-family: 'SegoeUIBold';
+}
+
+article{
+  margin-bottom: 20px;
+}
+
 .h2 {
   font-family: "SegoeUIItalic";
 }
@@ -31,6 +49,7 @@ ol, ul {
 
 .banner-container {
   padding: 0;
+  margin-top: 66px;
 }
 
 .banner {
@@ -97,8 +116,6 @@ nav {
 header nav a {
   display: block;
   padding: 20px;
-  color: white;
-  text-decoration: none;
 }
 
 header nav a.active, a:hover {
@@ -114,10 +131,13 @@ header nav a.active, a:hover {
   margin: 0;
 }
 
+.section{
+  margin-bottom: 15px;
+}
+
 .grey-section {
   background-color: #ddd;
   margin-left: -15px;
-  margin-bottom: 15px;
   font-family: 'SegoeUIItalic';
   line-height: 1.25;
   padding: 15px 0;
@@ -125,7 +145,7 @@ header nav a.active, a:hover {
 
 .grey-section-text {
   font-size: 14px;
-  padding: 15px 15px 0 50px;
+  padding: 15px 15px 15px 50px;
 }
 
 .schedule {
@@ -168,4 +188,28 @@ main{
 
 .dotted-list{
   list-style: disc;
+}
+
+footer {
+  padding: 15px 0 !important;
+  color: white;
+  text-decoration: none;
+  background: #4A4A4A; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, #4A4A4A , #232122); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #4A4A4A, #232122); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #4A4A4A, #232122); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #4A4A4A , #232122); /* Standard syntax */
+}
+
+footer a:hover{
+  background: none;
+}
+
+footer div{
+  padding: 0;
+}
+
+.footer-phone{
+  font-family: 'SegoeUISemiBold';
+  font-size: 21px;
 }
