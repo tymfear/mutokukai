@@ -14,22 +14,32 @@
         <tbody>
         <tr ng-repeat="contact in contacts.getContacts()">
           <td>
-            <address>{{contact.subway}} ({{contact.ageCategory}})
-              <p>{{contact.address}}</p>
+            <address>
+              <span ng-if="contact.subway && contact.subway.length">{{contact.subway}}</span>
+              <span ng-if="contact.ageCategory && contact.ageCategory.length">{{contact.ageCategory}}</span>
+              <p ng-if="contact.address && contact.address.length">{{contact.address}}</p>
               <time>
-                <strong class="time-red">{{contact.schedule}}</strong>
+                <strong class="time-red" ng-if="contact.schedule && contact.schedule.length">
+                  {{contact.schedule}}
+                </strong>
               </time>
             </address>
           </td>
           <td>
-            <p>{{contact.instructorName}}</p>
-            <p>{{contact.instructorRank}}</p>
+            <p ng-if="contact.instructorName && contact.instructorName.length">{{contact.instructorName}}</p>
+            <p ng-if="contact.instructorRank && contact.instructorRank.length">{{contact.instructorRank}}</p>
           </td>
           <td>
             <p>
-              Тел: <a href="tel:{{contact.phone}}"><strong class="time-red">+{{contact.phone}}</strong></a><br>
-              Skype: <a href="skype:{{contact.skype}}?call"><strong class="time-red">{{contact.skype}}</strong></a><br>
-              Email: <a href="mailto:{{contact.email}}"><strong class="time-red">{{contact.email}}</strong></a>
+              <span ng-repeat="phone in contact.phones">
+                Тел: <a href="tel:{{phone}}"><strong class="time-red">+{{phone}}</strong></a><br>
+              </span>
+              <span ng-if="contact.skype && contact.skype.length">
+                Skype: <a href="skype:{{contact.skype}}?call"><strong class="time-red">{{contact.skype}}</strong></a><br>
+              </span>
+              <span ng-if="contact.email && contact.email.length">
+                Email: <a href="mailto:{{contact.email}}"><strong class="time-red">{{contact.email}}</strong></a>
+            </span>
             </p>
           </td>
         </tr>

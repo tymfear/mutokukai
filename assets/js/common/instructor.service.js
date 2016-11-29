@@ -13,7 +13,14 @@
         instructorRank: '2-й дан Айкидо Айкикай',
         skype: 'tymfear',
         email: 'tymfear@gmail.com',
-        phone: '38-066-212-90-26'
+        phones: ['38-066-212-90-26']
+      },
+      {
+        id: 2,
+        instructorName: 'Колтун Андрей',
+        instructorRank: '3-й дан Айкидо Айкикай',
+        email: 'samuray_studio@mail.ru',
+        phones: ['38-066-630-24-24', '38-097-946-41-39']
       }
     ];
 
