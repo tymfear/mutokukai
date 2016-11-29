@@ -22,16 +22,15 @@
 <div class="main">
   <div ng-include="'assets/js/nav/nav.html'"></div>
 
-  <div class="container banner-container">
+  <div class="container banner-container" ng-controller="BannerController">
     <div class="banner">
       <div class="banner-text">
         <div class="col-md-6">
-          <h2 class="h4">У каждого есть дух, который нужно
-            совершенствовать; тело, которое должно быть тренировано; и путь,
-            который должен быть пройден.
+          <h2 class="h4">
+            {{"Cite" | translate}}
           </h2>
-          <h3 class="h5 text-md-right">О-Сэнсэй М. Уэсиба,</h3>
-          <h3 class="h5 text-md-right">основатель Айкидо</h3>
+          <h3 class="h5 text-md-right">{{"Author" | translate}},</h3>
+          <h3 class="h5 text-md-right">{{"Rank" | translate}}</h3>
         </div>
         <h2 class="text-md-right h5"></h2>
 
@@ -46,6 +45,8 @@
 
 </div>
 <script src="bower_components/angular/angular.min.js"></script>
+<script src="bower_components/angular-translate/angular-translate.min.js"></script>
+<script src="bower_components/angular-translate-loader-partial/angular-translate-loader-partial.min.js"></script>
 <script
     src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
 </body>
@@ -53,6 +54,10 @@
 <!--Routes-->
 <script src="assets/js/application.js"></script>
 <script src="assets/js/routes.config.js"></script>
+<script src="assets/js/home/home.controller.js"></script>
+<script src="assets/js/nav/nav.controller.js"></script>
 <script src="assets/js/contacts/contacts.controller.js"></script>
 <script src="assets/js/common/instructor.service.js"></script>
+<script src="assets/js/common/banner.controller.js"></script>
+<script src="assets/js/footer/footer.controller.js"></script>
 </html>

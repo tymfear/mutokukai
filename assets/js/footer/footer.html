@@ -1,11 +1,11 @@
-<footer class="container">
+<footer class="container" ng-controller="FooterController">
   <div class="col-md-8 offset-md-1">
     <address>
-      <p>Адрес:</p>
-      <p>г. Харьков</p>
-      <p>ул. Пушкинская, 79</p>
+      <p>{{"Address_Label" | translate}}:</p>
+      <p>{{"Address_City" | translate}}</p>
+      <p>{{"Address_Street" | translate}}</p>
     </address>
-    <p>© Мутокукай Харьков 2016</p>
+    <p>© {{"Mutokukai" | translate}} {{"Kharkiv" | translate}} 2016</p>
   </div>
   <div class="col-md-3">
     <p class="text-md-right footer-phone"><a href="tel:+380662129026">+38 (066) 212-90-26</a></p>

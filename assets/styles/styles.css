@@ -25,7 +25,7 @@ strong {
   font-family: 'SegoeUIBold';
 }
 
-article{
+article {
   margin-bottom: 20px;
 }
 
@@ -61,11 +61,11 @@ article{
   width: 100%;
 }
 
-.banner .h4{
+.banner .h4 {
   font-family: 'SegoeUISemiBold';
 }
 
-.banner .h5{
+.banner .h5 {
   font-family: 'SegoeUIItalic';
 }
 
@@ -132,7 +132,7 @@ header nav a.active, header nav a:hover {
   margin: 0;
 }
 
-.section{
+.section {
   margin-bottom: 15px;
 }
 
@@ -161,7 +161,7 @@ header nav a.active, header nav a:hover {
   color: #891A1F
 }
 
-main{
+main {
   padding: 15px 0;
 }
 
@@ -170,7 +170,7 @@ main{
   text-align: center;
 }
 
-.socials-list i{
+.socials-list i {
   padding: 10px;
   border-radius: 50%;
   background-color: #E6E6E6;
@@ -181,11 +181,11 @@ main{
   height: 46px
 }
 
-.socials-list a:hover{
+.socials-list a:hover {
   background: none;
 }
 
-.dotted-list{
+.dotted-list {
   list-style: disc;
 }
 
@@ -194,21 +194,38 @@ footer {
   color: white;
   text-decoration: none;
   background: #4A4A4A; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(left, #4A4A4A , #232122); /* For Safari 5.1 to 6.0 */
+  background: -webkit-linear-gradient(left, #4A4A4A, #232122); /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(right, #4A4A4A, #232122); /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(right, #4A4A4A, #232122); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to right, #4A4A4A , #232122); /* Standard syntax */
+  background: linear-gradient(to right, #4A4A4A, #232122); /* Standard syntax */
 }
 
-footer div{
+footer div {
   padding: 0;
 }
 
-.footer-phone{
+.footer-phone {
   font-family: 'SegoeUISemiBold';
   font-size: 21px;
 }
 
 header.h1 {
   padding: 20px;
+}
+
+.nav-left, .nav-right {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 -4px;
+}
+
+.nav-right {
+  width: 20%;
+  text-align: right;
+  font-family: 'SegoeUISemiBold';
+  font-size: 20px;
+}
+
+.nav-left {
+  width: 80%;
 }
