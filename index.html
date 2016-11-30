@@ -22,42 +22,25 @@
 <div class="main">
   <div ng-include="'assets/js/nav/nav.html'"></div>
 
-  <div class="container banner-container" ng-controller="BannerController">
-    <div class="banner">
-      <div class="banner-text">
-        <div class="col-md-6">
-          <h2 class="h4">
-            {{"Cite" | translate}}
-          </h2>
-          <h3 class="h5 text-md-right">{{"Author" | translate}},</h3>
-          <h3 class="h5 text-md-right">{{"Rank" | translate}}</h3>
-        </div>
-        <h2 class="text-md-right h5"></h2>
-
-      </div>
-      <img ng-src="assets/images/banner.jpg" alt="banner">
-    </div>
-  </div>
+  <banner></banner>
 
   <ui-view></ui-view>
 
   <div ng-include="'assets/js/footer/footer.html'"></div>
 
 </div>
+
 <script src="bower_components/angular/angular.min.js"></script>
 <script src="bower_components/angular-translate/angular-translate.min.js"></script>
 <script src="bower_components/angular-translate-loader-partial/angular-translate-loader-partial.min.js"></script>
-<script
-    src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
-</body>
-
-<!--Routes-->
+<script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
 <script src="assets/js/application.js"></script>
 <script src="assets/js/routes.config.js"></script>
 <script src="assets/js/home/home.controller.js"></script>
 <script src="assets/js/nav/nav.controller.js"></script>
 <script src="assets/js/contacts/contacts.controller.js"></script>
 <script src="assets/js/common/instructor.service.js"></script>
-<script src="assets/js/common/banner.controller.js"></script>
+<script src="assets/js/common/banner/banner.component.js"></script>
 <script src="assets/js/footer/footer.controller.js"></script>
+</body>
 </html>

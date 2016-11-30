@@ -2,12 +2,15 @@
   'use strict';
 
   angular.module('mutokukai')
-    .controller('BannerController', BannerController);
+    .component('banner', {
+    templateUrl: 'assets/js/common/banner/banner.html',
+    controller: BannerController
+  });
 
   BannerController.$inject = ['$translate', '$translatePartialLoader'];
 
   function BannerController($translate, $translatePartialLoader) {
-    var banner = this;
+    var ctrl = this;
 
     $translatePartialLoader.addPart('banner');
     $translate.refresh();
