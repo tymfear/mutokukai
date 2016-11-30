@@ -9,12 +9,14 @@
   function NavController($translate, $translatePartialLoader) {
     var nav = this;
 
+    nav.currentLocale = $translate.use;
+
     $translatePartialLoader.addPart('nav');
     $translatePartialLoader.addPart('common');
     $translate.refresh();
 
     nav.changeLocale = function (locale) {
       $translate.use(locale)
-    }
+    };
   }
 })();

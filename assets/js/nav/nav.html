@@ -37,8 +37,12 @@
       </nav>
     </div>
     <div class="nav-right">
-      <a href="#" ng-click="nav.changeLocale('ru-RU')">RUS</a>
-      <a href="#" ng-click="nav.changeLocale('ua-UA')">UKR</a>
+      <a href="#" ng-click="nav.changeLocale('ua-UA')" ng-show="nav.currentLocale() == 'ru-RU'" title="{{'Switch_UA' | translate}}">
+        RUS
+      </a>
+      <a href="#" ng-click="nav.changeLocale('ru-RU')" ng-show="nav.currentLocale() == 'ua-UA'" title="{{'Switch_RU' | translate}}">
+        UKR
+      </a>
     </div>
   </div>
 </header>
