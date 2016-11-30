@@ -1,6 +1,6 @@
 body {
   position: relative;
-  background-color: black;
+  background-color: #000000;
   font-family: "SegoeUIRegular";
   font-size: 16px;
   color: #262626;
@@ -36,7 +36,7 @@ article {
 }
 
 .container {
-  background-color: white;
+  background-color: #ffffff;
 }
 
 .container-grey {
