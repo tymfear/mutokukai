@@ -158,10 +158,19 @@ header nav a.active, header nav a:hover {
 }
 
 .schedule {
-  font-size: 25px;
+  font-size: 21px;
   font-family: 'SegoeUISemiBold';
   margin-top: 20px;
-  line-height: 1.25;
+  line-height: 1.7;
+}
+
+.schedule .row{
+  border-bottom: 1px solid #e6e6e6;
+  margin-right: 0;
+  padding: 6px 0;
+}
+.schedule .row:last-child{
+  border-bottom: none;
 }
 
 .time-red {
@@ -235,7 +244,7 @@ header.h1 {
   width: 80%;
 }
 
-.contacts-links, .contacts-links:hover {
+.contacts-links, .contacts-links:hover, .contacts-links:focus {
   color: #262626;
 }
 
