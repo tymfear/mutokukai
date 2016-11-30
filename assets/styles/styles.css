@@ -3,6 +3,7 @@ body {
   background-color: black;
   font-family: "SegoeUIRegular";
   font-size: 16px;
+  color: #262626;
 }
 
 ol, ul {
@@ -137,11 +138,17 @@ header nav a.active, header nav a:hover {
 }
 
 .grey-section {
-  background-color: #ddd;
+  background-color: #e6e6e6;
   margin-left: -15px;
   font-family: 'SegoeUIItalic';
   line-height: 1.25;
   padding: 15px 0 15px 15px;
+
+  background: #e6e6e6; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, #e6e6e6, #b0b0b0); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #e6e6e6, #b0b0b0); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #e6e6e6, #b0b0b0); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #e6e6e6, #b0b0b0); /* Standard syntax */
 
 }
 
@@ -174,11 +181,16 @@ main {
   padding: 10px;
   border-radius: 50%;
   background-color: #E6E6E6;
-  color: #636363;
+  color: #666666;
   font-size: 23px;
   font-weight: bold;
   width: 46px;
   height: 46px
+}
+
+.socials-list i:hover {
+  background-color: #666666;
+  color: #E6E6E6;
 }
 
 .socials-list a:hover {
@@ -229,3 +241,8 @@ header.h1 {
 .nav-left {
   width: 80%;
 }
+
+.contacts-links, .contacts-links:hover {
+  color: #262626;
+}
+

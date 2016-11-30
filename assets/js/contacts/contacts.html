@@ -6,39 +6,45 @@
       <table class="table">
         <thead>
         <tr>
-          <th>Место и время</th>
-          <th>Инструктор</th>
-          <th>Контакты инструктора</th>
+          <th class="col-md-6">Место и время</th>
+          <th class="col-md-3">Инструктор</th>
+          <th class="col-md-3">Контакты инструктора</th>
         </tr>
         </thead>
         <tbody>
         <tr ng-repeat="contact in contacts.getContacts()">
-          <td>
+          <td class="col-md-6">
             <address>
-              <span ng-if="contact.subway && contact.subway.length">{{contact.subway}}</span>
-              <span ng-if="contact.ageCategory && contact.ageCategory.length">{{contact.ageCategory}}</span>
-              <p ng-if="contact.address && contact.address.length">{{contact.address}}</p>
+              <span ng-if="contact.ageCategory && contact.ageCategory.length">
+                <i class="fa fa-male time-red" aria-hidden="true"></i> {{contact.ageCategory}}
+              </span>
+              <p ng-if="contact.address && contact.address.length">
+                <i class="fa fa-map-marker time-red" aria-hidden="true"></i> {{contact.address}}
+              </p>
               <time>
                 <strong class="time-red" ng-if="contact.schedule && contact.schedule.length">
-                  {{contact.schedule}}
+                  <i class="fa fa-clock-o" aria-hidden="true"></i> {{contact.schedule}}
                 </strong>
               </time>
             </address>
           </td>
-          <td>
+          <td class="col-md-3">
             <p ng-if="contact.instructorName && contact.instructorName.length">{{contact.instructorName}}</p>
             <p ng-if="contact.instructorRank && contact.instructorRank.length">{{contact.instructorRank}}</p>
           </td>
-          <td>
+          <td class="col-md-3">
             <p>
               <span ng-repeat="phone in contact.phones">
-                Тел: <a href="tel:{{phone}}"><strong class="time-red">+{{phone}}</strong></a><br>
+                <i class="fa fa-mobile time-red" aria-hidden="true"> </i>
+                <a href="tel:{{phone}}" class="contacts-links"><strong>+{{phone}}</strong></a><br>
               </span>
               <span ng-if="contact.skype && contact.skype.length">
-                Skype: <a href="skype:{{contact.skype}}?call"><strong class="time-red">{{contact.skype}}</strong></a><br>
+                <i class="fa fa-skype time-red" aria-hidden="true"></i>
+                <a href="skype:{{contact.skype}}?call" class="contacts-links"><strong>{{contact.skype}}</strong></a><br>
               </span>
               <span ng-if="contact.email && contact.email.length">
-                Email: <a href="mailto:{{contact.email}}"><strong class="time-red">{{contact.email}}</strong></a>
+                <i class="fa fa-envelope-o time-red" aria-hidden="true"></i>
+                <a href="mailto:{{contact.email}}" class="contacts-links"><strong>{{contact.email}}</strong></a>
             </span>
             </p>
           </td>
