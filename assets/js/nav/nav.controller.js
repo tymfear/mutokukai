@@ -4,9 +4,9 @@
   angular.module('mutokukai')
     .controller('NavController', NavController);
 
-  NavController.$inject = ['$translate', '$translatePartialLoader'];
+  NavController.$inject = ['$translate', '$translatePartialLoader', '$cookies'];
 
-  function NavController($translate, $translatePartialLoader) {
+  function NavController($translate, $translatePartialLoader, $cookies) {
     var nav = this;
 
     nav.currentLocale = $translate.use;
@@ -16,7 +16,8 @@
     $translate.refresh();
 
     nav.changeLocale = function (locale) {
-      $translate.use(locale)
+      $translate.use(locale);
+      $cookies.put('preferredLocale', locale);
     };
   }
 })();
