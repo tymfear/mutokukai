@@ -202,7 +202,9 @@ main {
 }
 
 footer {
-  padding: 15px 0 !important;
+  font-size: 21px;
+  padding: 15px;
+  font-family: 'SegoeUISemiBold';
   color: white;
   text-decoration: none;
   background: #4A4A4A; /* For browsers that do not support gradients */
@@ -210,15 +212,6 @@ footer {
   background: -o-linear-gradient(right, #4A4A4A, #232122); /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(right, #4A4A4A, #232122); /* For Firefox 3.6 to 15 */
   background: linear-gradient(to right, #4A4A4A, #232122); /* Standard syntax */
-}
-
-footer div {
-  padding: 0;
-}
-
-.footer-phone {
-  font-family: 'SegoeUISemiBold';
-  font-size: 21px;
 }
 
 header.h1 {
