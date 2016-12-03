@@ -36,7 +36,7 @@
             <p>
               <span ng-repeat="phone in contact.phones">
                 <i class="fa fa-mobile time-red" aria-hidden="true"> </i>
-                <a href="tel:{{phone}}" class="contacts-links"><strong>+{{phone}}</strong></a><br>
+                <a href="tel:+{{phone}}" class="contacts-links"><strong>+{{phone}}</strong></a><br>
               </span>
               <span ng-if="contact.skype && contact.skype.length">
                 <i class="fa fa-skype time-red" aria-hidden="true"></i>
