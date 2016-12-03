@@ -9,7 +9,7 @@
         });
 
         $translateProvider.preferredLanguage('ru-RU');
-        $compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|ftp|mailto|chrome-extension|skype):/);
+        $compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|ftp|mailto|tel|chrome-extension|skype):/);
       }])
     .run(['$translate', '$cookies',
       function ($translate, $cookies) {
