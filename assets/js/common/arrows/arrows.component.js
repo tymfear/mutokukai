@@ -10,12 +10,16 @@
   ArrowsController.$inject = ['$interval'];
 
   function ArrowsController($interval) {
-    var ctrl = this;
-
-    $interval(higlightArrow, 1000);
+    var ctrl       = this;
 
     ctrl.currentArrow = 2;
     ctrl.nextArrow    = 0;
+
+    var hignlightStopper = $interval(higlightArrow, 1000);
+
+    ctrl.$onDestroy = function () {
+      $interval.cancel(hignlightStopper);
+    };
 
     function higlightArrow() {
       var arrows  = $('.arrow span');
@@ -27,6 +31,8 @@
 
       ctrl.nextArrow    = ctrl.nextArrow < 2 ? (++ctrl.nextArrow) : 0;
       ctrl.currentArrow = ctrl.currentArrow < 2 ? (++ctrl.currentArrow) : 0;
+
+      console.log('test')
     }
   }
 })();
