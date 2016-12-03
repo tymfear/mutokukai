@@ -320,3 +320,7 @@ table {
   overflow-x: scroll;
   display: block;
 }
+
+button.navbar-toggle {
+  border: 1px solid #999999;
+}
