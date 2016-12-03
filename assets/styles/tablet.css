@@ -1,0 +1,42 @@
+@media (min-width: 768px) and (max-width: 991px) {
+  .navbar {
+    font-size: 12px;
+  }
+
+  .schedule {
+    font-size: 15px;
+  }
+
+  .h2 {
+    font-size: 25px;
+  }
+
+  .h4 {
+    font-size: 18px;
+  }
+
+  .h5 {
+    font-size: 16px;
+    margin-bottom: 4px;
+  }
+
+  footer {
+    font-size: 16px;
+  }
+
+  .banner-container {
+    margin-top: 59px;
+  }
+
+  .arrow {
+    font-size: 22px;
+  }
+
+  .socials-list {
+    text-align: center;
+  }
+
+  .socials-list li {
+    margin-bottom: 10px;
+  }
+}

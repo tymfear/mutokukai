@@ -1,0 +1,30 @@
+@media (max-width: 767px) {
+  /*body {*/
+    /*text-align: center;*/
+  /*}*/
+
+  header {
+    text-align: left;
+  }
+
+  .banner-container {
+    margin-top: 59px;
+    text-align: left;
+  }
+
+  .banner-container .h4, .banner-container .h5 {
+    margin-bottom: 4px;
+  }
+
+  .banner-text {
+    top: 5px;
+    left: 25px;
+  }
+
+  .banner-text .h4 {
+    font-size: 15px;
+  }
+  .banner-text .h5 {
+    font-size: 12px;
+  }
+}
