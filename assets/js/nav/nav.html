@@ -38,14 +38,14 @@
     </div>
     <div class="nav-right">
       <div class="hidden-sm-down">
-        <a href="#" ng-click="nav.changeLocale('ua-UA')" ng-show="nav.currentLocale() == 'ru-RU'"
+        <div class="lang" ng-click="nav.changeLocale('ua-UA')" ng-if="nav.currentLocale() == 'ru-RU'"
            title="{{'Switch_UA' | translate}}">
           RUS
-        </a>
-        <a href="#" ng-click="nav.changeLocale('ru-RU')" ng-show="nav.currentLocale() == 'ua-UA'"
+        </div>
+        <div class="lang" ng-click="nav.changeLocale('ru-RU')" ng-if="nav.currentLocale() == 'ua-UA'"
            title="{{'Switch_RU' | translate}}">
           UKR
-        </a>
+        </div>
       </div>
 
       <button type="button" class="navbar-toggle hidden-md-up"
@@ -73,15 +73,13 @@
       <li ui-sref="mutokukai" ui-sref-active="active">
         {{"Mutokukai" | translate}}
       </li>
-      <li>
-        <a href="#" ng-click="nav.changeLocale('ua-UA')" ng-show="nav.currentLocale() == 'ru-RU'"
-           title="{{'Switch_UA' | translate}}">
+      <li ng-click="nav.changeLocale('ua-UA')" ng-if="nav.currentLocale() == 'ru-RU'"
+          title="{{'Switch_UA' | translate}}">
           RUS
-        </a>
-        <a href="#" ng-click="nav.changeLocale('ru-RU')" ng-show="nav.currentLocale() == 'ua-UA'"
-           title="{{'Switch_RU' | translate}}">
-          UKR
-        </a>
+      </li>
+      <li ng-click="nav.changeLocale('ru-RU')" ng-if="nav.currentLocale() == 'ua-UA'"
+          title="{{'Switch_RU' | translate}}">
+        UKR
       </li>
     </ul>
   </div>

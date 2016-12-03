@@ -302,7 +302,7 @@ header.h1 {
   border-top: 1px solid #999999;
 }
 
-#header-navbar-collapse li {
+#header-navbar-collapse li, .lang {
   line-height: 2;
   cursor: pointer;
   color: #ffffff;
