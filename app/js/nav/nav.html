@@ -39,23 +39,17 @@
     <div class="nav-right">
       <div class="hidden-sm-down">
         <div class="lang" ng-click="nav.changeLocale('ua-UA')" ng-if="nav.currentLocale() == 'ru-RU'"
-           title="{{'Switch_UA' | translate}}">
+             title="{{'Switch_UA' | translate}}">
           RUS
         </div>
         <div class="lang" ng-click="nav.changeLocale('ru-RU')" ng-if="nav.currentLocale() == 'ua-UA'"
-           title="{{'Switch_RU' | translate}}">
+             title="{{'Switch_RU' | translate}}">
           UKR
         </div>
       </div>
 
-      <button type="button" class="navbar-toggle hidden-md-up"
-              data-toggle="collapse" data-target="#header-navbar-collapse">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-
+      <button type="button" class="navbar-toggler hidden-md-up"  data-toggle="collapse" data-target="#header-navbar-collapse"
+              aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"></button>
     </div>
   </div>
 
@@ -75,7 +69,7 @@
       </li>
       <li ng-click="nav.changeLocale('ua-UA')" ng-if="nav.currentLocale() == 'ru-RU'"
           title="{{'Switch_UA' | translate}}">
-          RUS
+        RUS
       </li>
       <li ng-click="nav.changeLocale('ru-RU')" ng-if="nav.currentLocale() == 'ua-UA'"
           title="{{'Switch_RU' | translate}}">
