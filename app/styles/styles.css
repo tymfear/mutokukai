@@ -1,7 +1,7 @@
 body {
   position: relative;
   background-color: #000000;
-  font-family: "SegoeUIRegular";
+  font-family: "SegoeUIRegular", sans-serif;;
   font-size: 16px;
   color: #262626;
 }
@@ -29,7 +29,7 @@ a, a:hover, a:active, a:focus {
 }
 
 strong {
-  font-family: 'SegoeUIBold';
+  font-family: 'SegoeUIBold', sans-serif;;
 }
 
 article {
@@ -37,7 +37,7 @@ article {
 }
 
 .h1, .h2 {
-  font-family: "SegoeUIItalic";
+  font-family: "SegoeUIItalic", sans-serif;;
   margin: 0;
 }
 
@@ -69,11 +69,11 @@ article {
 }
 
 .banner .h4 {
-  font-family: 'SegoeUISemiBold';
+  font-family: 'SegoeUISemiBold', sans-serif;;
 }
 
 .banner .h5 {
-  font-family: 'SegoeUIItalic';
+  font-family: 'SegoeUIItalic', sans-serif;;
 }
 
 .banner-text {
@@ -144,9 +144,8 @@ header nav a.active, header nav a:hover {
 }
 
 .grey-section {
-  background-color: #e6e6e6;
   margin-left: -15px;
-  font-family: 'SegoeUIItalic';
+  font-family: 'SegoeUIItalic', sans-serif;;
   line-height: 1.25;
   padding: 15px 0 15px 15px;
 
@@ -165,7 +164,7 @@ header nav a.active, header nav a:hover {
 
 .schedule {
   font-size: 21px;
-  font-family: 'SegoeUISemiBold';
+  font-family: 'SegoeUISemiBold', sans-serif;;
   margin-top: 20px;
   line-height: 1.7;
 }
@@ -232,7 +231,7 @@ main {
 footer {
   font-size: 21px;
   padding: 15px;
-  font-family: 'SegoeUISemiBold';
+  font-family: 'SegoeUISemiBold', sans-serif;;
   color: white;
   text-decoration: none;
   background: #4A4A4A; /* For browsers that do not support gradients */
@@ -255,7 +254,7 @@ header.h1 {
 .nav-right {
   width: 20%;
   text-align: right;
-  font-family: 'SegoeUISemiBold';
+  font-family: 'SegoeUISemiBold', sans-serif;
   font-size: 20px;
 }
 
@@ -268,15 +267,13 @@ header.h1 {
 }
 
 .navbar-toggle {
-  border-color: #ddd;
   position: relative;
   float: right;
   padding: 9px 10px;
   margin-top: 8px;
   margin-right: 15px;
   margin-bottom: 8px;
-  background-color: rgba(0, 0, 0, 0);
-  background-image: none;
+  background: rgba(0, 0, 0, 0) none;
   border: 1px solid rgba(0, 0, 0, 0);
   border-radius: 4px;
 }
