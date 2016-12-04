@@ -19,6 +19,7 @@
     "angular": "^1.5.9",
     "angular-ui-router": "^0.3.2",
     "angular-translate-loader-partial": "^2.13.0",
-    "angular-cookies": "^1.5.9"
+    "angular-cookies": "^1.5.9",
+    "bootstrap": "4.0"
   }
 }

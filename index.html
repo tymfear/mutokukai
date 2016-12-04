@@ -8,31 +8,30 @@
         content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-  <link rel="icon" href="assets/favicon.ico">
+  <link rel="icon" href="app/favicon.ico">
 
   <title>Mutokukai Харьков</title>
 
-  <link href="vendor/styles/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/styles/styles.css" rel="stylesheet">
-  <link href="assets/styles/tablet.css" rel="stylesheet">
-  <link href="assets/styles/mobile.css" rel="stylesheet">
-  <link href="assets/styles/fonts.css" rel="stylesheet">
+  <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="app/styles/styles.css" rel="stylesheet">
+  <link href="app/styles/tablet.css" rel="stylesheet">
+  <link href="app/styles/mobile.css" rel="stylesheet">
+  <link href="app/styles/fonts.css" rel="stylesheet">
   <script src="https://use.fontawesome.com/8b350b738a.js"></script>
-  <script src="vendor/js/jquery.min.js"></script>
-  <script src="vendor/js/tether.min.js"></script>
-  <script src="vendor/js/bootstrap.min.js"></script>
-  <script src="vendor/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/tether/dist/js/tether.min.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 </head>
 
 <body ng-app="mutokukai" class="text-xs-center text-md-left">
 <div class="main">
-  <div ng-include="'assets/js/nav/nav.html'"></div>
+  <div ng-include="'app/js/nav/nav.html'"></div>
 
   <banner></banner>
 
   <ui-view></ui-view>
 
-  <div ng-include="'assets/js/footer/footer.html'"></div>
+  <div ng-include="'app/js/footer/footer.html'"></div>
 
 </div>
 
@@ -41,14 +40,14 @@
 <script src="bower_components/angular-translate-loader-partial/angular-translate-loader-partial.min.js"></script>
 <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
 <script src="bower_components/angular-cookies/angular-cookies.min.js"></script>
-<script src="assets/js/application.js"></script>
-<script src="assets/js/routes.config.js"></script>
-<script src="assets/js/home/home.controller.js"></script>
-<script src="assets/js/nav/nav.controller.js"></script>
-<script src="assets/js/contacts/contacts.controller.js"></script>
-<script src="assets/js/common/instructor.service.js"></script>
-<script src="assets/js/common/banner/banner.component.js"></script>
-<script src="assets/js/common/arrows/arrows.component.js"></script>
-<script src="assets/js/footer/footer.controller.js"></script>
+<script src="app/js/application.js"></script>
+<script src="app/js/routes.config.js"></script>
+<script src="app/js/home/home.controller.js"></script>
+<script src="app/js/nav/nav.controller.js"></script>
+<script src="app/js/contacts/contacts.controller.js"></script>
+<script src="app/js/common/instructor.service.js"></script>
+<script src="app/js/common/banner/banner.component.js"></script>
+<script src="app/js/common/arrows/arrows.component.js"></script>
+<script src="app/js/footer/footer.controller.js"></script>
 </body>
 </html>
