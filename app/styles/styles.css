@@ -1,15 +1,9 @@
 body {
   position: relative;
-  background-color: #000000;
+  background-color: #ffffff;
   font-family: "SegoeUIRegular", sans-serif;;
   font-size: 16px;
   color: #262626;
-}
-
-@media (min-width: 992px) and (max-width: 1199px) {
-  body {
-    font-size: 15px;
-  }
 }
 
 ol, ul {
@@ -42,7 +36,7 @@ article {
 }
 
 .container {
-  background-color: #ffffff;
+  position: relative;
 }
 
 .container-grey {
@@ -79,8 +73,8 @@ article {
 .banner-text {
   color: #FFFFFF;
   position: absolute;
-  top: 25px;
-  left: 100px;
+  top: 50px;
+  left: 50px;
 }
 
 img {
@@ -200,19 +194,6 @@ main {
   font-weight: bold;
   width: 46px;
   height: 46px
-}
-
-@media (min-width: 992px) and (max-width: 1199px) {
-  .socials-list i {
-    padding: 9px;
-    border-radius: 50%;
-    background-color: #E6E6E6;
-    color: #666666;
-    font-size: 20px;
-    font-weight: bold;
-    width: 40px;
-    height: 40px
-  }
 }
 
 .socials-list i:hover {

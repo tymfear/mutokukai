@@ -1,4 +1,35 @@
-@media (min-width: 768px) and (max-width: 991px) {
+@media (max-width: 1199px) {
+  body {
+    font-size: 15px;
+  }
+
+  .banner-text {
+    top: 50px;
+    left: 50px;
+  }
+
+  .h4 {
+    font-size: 18px;
+  }
+
+  .h5 {
+    font-size: 16px;
+    margin-bottom: 4px;
+  }
+
+  .socials-list i {
+    padding: 9px;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 991px) {
+  body {
+    font-size: 16px;
+  }
+
   .navbar {
     font-size: 12px;
   }
@@ -37,6 +68,18 @@
   }
 
   .socials-list li {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+  }
+
+  .socials-list i {
+    padding: 11px;
+    font-size: 25px;
+    width: 50px;
+    height: 50px
+  }
+
+  .banner-text {
+    top: 25px;
+    left: 25px;
   }
 }
