@@ -1,4 +1,4 @@
-<header class="navbar navbar-fixed-top navbar-dark bg-inverse" ng-controller="NavController as nav">
+<header class="navbar navbar-fixed-top navbar-dark bg-inverse">
   <div class="container container-grey">
     <div class="nav-left">
       <div class="logo">
@@ -38,11 +38,11 @@
     </div>
     <div class="nav-right">
       <div class="hidden-sm-down">
-        <div class="lang" ng-click="nav.changeLocale('ua-UA')" ng-if="nav.currentLocale() == 'ru-RU'"
+        <div class="lang" ng-click="$ctrl.changeLocale('ua-UA')" ng-if="$ctrl.currentLocale() == 'ru-RU'"
              title="{{'Switch_UA' | translate}}">
           RUS
         </div>
-        <div class="lang" ng-click="nav.changeLocale('ru-RU')" ng-if="nav.currentLocale() == 'ua-UA'"
+        <div class="lang" ng-click="$ctrl.changeLocale('ru-RU')" ng-if="$ctrl.currentLocale() == 'ua-UA'"
              title="{{'Switch_RU' | translate}}">
           UKR
         </div>
@@ -67,11 +67,11 @@
       <li ui-sref="mutokukai" ui-sref-active="active">
         {{"Mutokukai" | translate}}
       </li>
-      <li ng-click="nav.changeLocale('ua-UA')" ng-if="nav.currentLocale() == 'ru-RU'"
+      <li ng-click="$ctrl.changeLocale('ua-UA')" ng-if="$ctrl.currentLocale() == 'ru-RU'"
           title="{{'Switch_UA' | translate}}">
         RUS
       </li>
-      <li ng-click="nav.changeLocale('ru-RU')" ng-if="nav.currentLocale() == 'ua-UA'"
+      <li ng-click="$ctrl.changeLocale('ru-RU')" ng-if="$ctrl.currentLocale() == 'ua-UA'"
           title="{{'Switch_RU' | translate}}">
         UKR
       </li>

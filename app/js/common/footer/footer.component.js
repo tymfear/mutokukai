@@ -2,18 +2,21 @@
   'use strict';
 
   angular.module('mutokukai')
-    .controller('FooterController', FooterController);
+    .component('siteFooter', {
+      templateUrl: 'app/js/common/footer/footer.html',
+      controller: FooterController
+    });
 
   FooterController.$inject = ['$translate', '$translatePartialLoader', '$filter'];
 
   function FooterController($translate, $translatePartialLoader, $filter) {
-    var footer = this;
+    var ctrl = this;
 
     $translatePartialLoader.addPart('footer');
     $translatePartialLoader.addPart('common');
     $translate.refresh();
-    
-    footer.currentYear = function(){
+
+    ctrl.currentYear = function(){
       return $filter('date')(new Date(), 'yyyy');
     }
   }

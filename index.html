@@ -25,14 +25,13 @@
 
 <body ng-app="mutokukai" class="text-xs-center text-md-left">
 <div class="main">
-  <div ng-include="'app/js/nav/nav.html'"></div>
+  <header-navigation></header-navigation>
 
   <banner></banner>
 
   <ui-view></ui-view>
 
-  <div ng-include="'app/js/footer/footer.html'"></div>
-
+  <site-footer></site-footer>
 </div>
 
 <script src="bower_components/angular/angular.min.js"></script>
@@ -43,11 +42,11 @@
 <script src="app/js/application.js"></script>
 <script src="app/js/routes.config.js"></script>
 <script src="app/js/home/home.controller.js"></script>
-<script src="app/js/nav/nav.controller.js"></script>
 <script src="app/js/contacts/contacts.controller.js"></script>
 <script src="app/js/common/instructor.service.js"></script>
+<script src="app/js/common/header/header.component.js"></script>
 <script src="app/js/common/banner/banner.component.js"></script>
 <script src="app/js/common/arrows/arrows.component.js"></script>
-<script src="app/js/footer/footer.controller.js"></script>
+<script src="app/js/common/footer/footer.component.js"></script>
 </body>
 </html>
