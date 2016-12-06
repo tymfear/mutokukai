@@ -32,7 +32,6 @@ article {
 
 .h1, .h2 {
   font-family: "SegoeUIItalic", sans-serif;;
-  margin: 0;
 }
 
 .container {
@@ -41,6 +40,10 @@ article {
 
 .container-grey {
   background-color: #373a3c;
+}
+
+.grey-section .h1, .grey-section .h2 {
+  margin: 0;
 }
 
 .navbar {
