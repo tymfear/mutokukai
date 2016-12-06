@@ -49,99 +49,26 @@
       </div>
 
       <div class="col-md-11 offset-md-1 schedule section">
-        <div class="row">
-          <div class="col-md-4">
-            <i class="fa fa-train" aria-hidden="true"></i>
-            <span class="time-red">
-              {{"Pushkinskaya" | translate}}
-            </span>
-          </div>
-          <div class="col-md-2">
-            <i class="fa fa-clock-o" aria-hidden="true"></i>
-            <span class="time-red">6:30</span>
-          </div>
-          <div class="col-md-6">
-            <i class="fa fa-calendar" aria-hidden="true"></i>
-            <span class="time-red">Пн, Ср, Пт, Сб</span>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-4">
-            <i class="fa fa-train" aria-hidden="true"></i>
-            <span class="time-red">
-              {{"Sportivnaya" | translate}}
-            </span>
-          </div>
-          <div class="col-md-2">
-            <i class="fa fa-clock-o" aria-hidden="true"></i>
-            <span class="time-red">17:00</span>
-          </div>
-          <div class="col-md-6">
-            <i class="fa fa-calendar" aria-hidden="true"></i>
-            <span class="time-red">Пн, Ср, Пт</span>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-4">
-            <i class="fa fa-train" aria-hidden="true"></i>
-            <span class="time-red">
-              {{"University" | translate}}
-            </span>
-          </div>
-          <div class="col-md-2">
-            <i class="fa fa-clock-o" aria-hidden="true"></i>
-            <span class="time-red">18:30</span>
-          </div>
-          <div class="col-md-6">
-            <i class="fa fa-calendar" aria-hidden="true"></i>
-            <span class="time-red">Вт, Чт</span>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-4">
-            <i class="fa fa-train" aria-hidden="true"></i>
-            <span class="time-red">
-              {{"Nauchnaya" | translate}}
-            </span>
-          </div>
-          <div class="col-md-2">
-            <i class="fa fa-clock-o" aria-hidden="true"></i> <span
-              class="time-red">18:00</span>
-          </div>
-          <div class="col-md-6">
-            <i class="fa fa-calendar" aria-hidden="true"></i>
-            <span class="time-red">Пн, Ср, Пт</span>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-4">
-            <i class="fa fa-bus" aria-hidden="true"></i>
-            <span class="time-red">
-              {{"Pesochin" | translate}}
-            </span>
-          </div>
-          <div class="col-md-2">
-            <i class="fa fa-clock-o" aria-hidden="true"></i> <span
-              class="time-red">19:00</span>
-          </div>
-          <div class="col-md-6">
-            <i class="fa fa-calendar" aria-hidden="true"></i>
-            <span class="time-red">Вт, Чт, Сб</span>
-          </div>
+        <h2 class="h2">{{'Nearest_Classes' | translate}}</h2>
+        <div>
+          <nearest-class-schedule ng-repeat="class in home.classesSchedule"
+                                  nearest="class">
+          </nearest-class-schedule>
         </div>
       </div>
     </div>
 
     <aside class="col-md-2">
       <ul class="socials-list">
-        <li title="{{'VK_Title' | translate}}"><a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
-        <li title="{{'FB_Title' | translate}}"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-        <li title="{{'Mail_Title' | translate}}"><a href="mailto:tymfear@gmail.com"><i class="fa fa-envelope-o"
-                                                                                       aria-hidden="true"></i></a></li>
+        <li title="{{'VK_Title' | translate}}"><a href="#"><i class="fa fa-vk"
+                                                              aria-hidden="true"></i></a>
+        </li>
+        <li title="{{'FB_Title' | translate}}"><a href="#"><i
+            class="fa fa-facebook" aria-hidden="true"></i></a></li>
+        <li title="{{'Mail_Title' | translate}}"><a
+            href="mailto:tymfear@gmail.com"><i class="fa fa-envelope-o"
+                                               aria-hidden="true"></i></a>
+        </li>
       </ul>
     </aside>
   </section>

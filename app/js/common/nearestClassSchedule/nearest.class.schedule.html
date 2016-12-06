@@ -1,0 +1,17 @@
+<div class="row">
+  <div class="col-md-4">
+    <i class="fa fa-{{$ctrl.nearest.transport}}" aria-hidden="true"></i>
+            <span class="time-red">
+              {{$ctrl.nearest.place | translate}}
+            </span>
+  </div>
+  <div class="col-md-2">
+    <i class="fa fa-clock-o" aria-hidden="true"></i>
+    <span class="time-red">{{$ctrl.closestClassTime}}</span>
+  </div>
+  <div class="col-md-6">
+    <i class="fa fa-calendar" aria-hidden="true"></i>
+    <span class="time-red">{{$ctrl.closestClassDay | translate}}</span>
+    <span>({{$ctrl.closestClassDate}})</span>
+  </div>
+</div>
