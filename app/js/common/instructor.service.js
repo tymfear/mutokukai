@@ -1,4 +1,4 @@
-(function () {
+(function(){
   'use strict';
   angular.module('mutokukai')
     .service('InstructorsService', InstructorsService);
@@ -32,16 +32,14 @@
       }
     ];
 
-    instructors.getInstructor = function (id) {
-      for (var i = 0; i < instructors.list.length; i++) {
+    instructors.getInstructor = function(id){
+      for(var i = 0; i < instructors.list.length; i++) {
         var instructor = instructors.list[i];
 
-        if (instructor.id === id) {
+        if(instructor.id === id) {
           return instructor;
         }
       }
     }
   }
-
-
 })();

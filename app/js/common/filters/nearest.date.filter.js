@@ -28,8 +28,12 @@
           result['time'] = schedule[day];
           break;
         } else {
-          result['day']  = 0;
-          result['time'] = schedule[0];
+          for(var i = 0; i < day; i++){
+            if(schedule[i]) {
+              result['day']  = i;
+              result['time'] = schedule[i];
+            }
+          }
         }
       }
 
