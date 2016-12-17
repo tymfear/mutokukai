@@ -11,9 +11,11 @@
         $translateProvider.preferredLanguage('ru-RU');
         $compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|ftp|mailto|tel|chrome-extension|skype):/);
       }])
-    .run(['$translate', '$cookies',
-      function ($translate, $cookies) {
+    .run(['$translate', '$cookies', '$translatePartialLoader',
+      function ($translate, $cookies, $translatePartialLoader) {
         setLanguage();
+        $translatePartialLoader.addPart('common');
+        $translate.refresh();
 
         function setLanguage() {
           var locale = $cookies.get('preferredLocale');
