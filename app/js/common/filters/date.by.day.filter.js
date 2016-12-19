@@ -36,7 +36,7 @@
 
       return moment(moment().startOf('week')
         .add(dayNumber, 'days')).format('DD-MM-YYYY');
-    }
+    };
   }
 })();
 

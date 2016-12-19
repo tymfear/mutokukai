@@ -3,7 +3,7 @@
 
   angular.module('mutokukai')
     .component('siteFooter', {
-      templateUrl: 'app/js/common/footer/footer.html',
+      templateUrl: 'app/templates/common/footer/footer.html',
       controller: FooterController
     });
 
@@ -18,6 +18,6 @@
 
     ctrl.currentYear = function(){
       return $filter('date')(new Date(), 'yyyy');
-    }
+    };
   }
 })();

@@ -3,7 +3,7 @@
 
   angular.module('mutokukai')
     .component('headerNavigation', {
-      templateUrl: 'app/js/common/header/header.html',
+      templateUrl: 'app/templates/common/header/header.html',
       controller: HeaderController
     });
 

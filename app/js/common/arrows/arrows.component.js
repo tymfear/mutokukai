@@ -3,7 +3,7 @@
 
   angular.module('mutokukai')
     .component('arrows', {
-      templateUrl: 'app/js/common/arrows/arrows.html',
+      templateUrl: 'app/templates/common/arrows/arrows.html',
       controller: ArrowsController
     });
 

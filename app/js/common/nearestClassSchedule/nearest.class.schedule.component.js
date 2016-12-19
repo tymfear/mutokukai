@@ -3,7 +3,7 @@
 
   angular.module('mutokukai')
     .component('nearestClassSchedule', {
-      templateUrl: 'app/js/common/nearestClassSchedule/nearest.class.schedule.html',
+      templateUrl: 'app/templates/common/nearestClassSchedule/nearest.class.schedule.html',
       controller: NearestClassSchedule,
       bindings: {
         nearest: '<'
@@ -16,8 +16,8 @@
     var ctrl = this;
 
     ctrl.closestClass     = nearestDate(ctrl.nearest.schedule);
-    ctrl.closestClassDay  = daysOfWeek[ctrl.closestClass['day']];
-    ctrl.closestClassTime = ctrl.closestClass['time'];
+    ctrl.closestClassDay  = daysOfWeek[ctrl.closestClass.day];
+    ctrl.closestClassTime = ctrl.closestClass.time;
     ctrl.closestClassDate = dateByDay(ctrl.closestClassDay);
     
     $translatePartialLoader.addPart('footer');

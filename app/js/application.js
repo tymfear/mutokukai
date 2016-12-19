@@ -1,6 +1,6 @@
-'use strict';
-
 (function () {
+  'use strict';
+  
   angular.module('mutokukai', ['ui.router', 'pascalprecht.translate', 'ngCookies'])
     .config(['$translateProvider', '$compileProvider',
       function ($translateProvider, $compileProvider) {
@@ -20,7 +20,7 @@
         function setLanguage() {
           var locale = $cookies.get('preferredLocale');
 
-          if (locale) { $translate.use(locale) }
+          if (locale) { $translate.use(locale); }
         }
       }]);
 })();

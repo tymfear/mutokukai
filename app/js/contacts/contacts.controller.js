@@ -47,10 +47,10 @@
       
       angular.forEach(contacts.list, function (contact) {
         var instructor = instructors.getInstructor(contact.instructorId);
-        result.push(angular.extend(contact, instructor))
+        result.push(angular.extend(contact, instructor));
       });
 
       return result;
-    }
+    };
   }
 })();

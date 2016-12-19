@@ -1,6 +1,6 @@
-'use strict';
-
 (function(){
+  'use strict';
+  
   angular.module('mutokukai')
     .constant('daysOfWeek', {
       0: "Sunday",

@@ -8,7 +8,7 @@
 
   function NearestDateFilter(){
     return function(schedule){
-      if(!schedule) { return }
+      if(!schedule) { return; }
 
       var today  = moment().day(),
           result = {};
@@ -19,26 +19,26 @@
           var startHour = schedule[day].split(':')[0];
 
           if(startHour > moment().hours()) {
-            result['day']  = day;
-            result['time'] = schedule[day];
+            result.day  = day;
+            result.time = schedule[day];
             break;
           }
         } else if(day > today) {
-          result['day']  = day;
-          result['time'] = schedule[day];
+          result.day  = day;
+          result.time = schedule[day];
           break;
         } else {
           for(var i = 0; i < day; i++){
             if(schedule[i]) {
-              result['day']  = i;
-              result['time'] = schedule[i];
+              result.day  = i;
+              result.time = schedule[i];
             }
           }
         }
       }
 
       return result;
-    }
+    };
   }
 })();
 

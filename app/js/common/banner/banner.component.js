@@ -3,7 +3,7 @@
 
   angular.module('mutokukai')
     .component('banner', {
-    templateUrl: 'app/js/common/banner/banner.html',
+    templateUrl: 'app/templates/common/banner/banner.html',
     controller: BannerController
   });
 
