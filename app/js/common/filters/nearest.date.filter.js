@@ -28,7 +28,7 @@
           result.time = schedule[day];
           break;
         } else {
-          for(var i = 0; i < day; i++){
+          for(var i = 0; i <= day; i++){
             if(schedule[i]) {
               result.day  = i;
               result.time = schedule[i];
