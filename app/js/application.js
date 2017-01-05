@@ -2,11 +2,18 @@
   'use strict';
   
   angular.module('mutokukai', ['ui.router', 'pascalprecht.translate', 'ngCookies'])
-    .config(['$translateProvider', '$compileProvider',
-      function ($translateProvider, $compileProvider) {
+    .config(['$translateProvider', '$compileProvider', '$sceDelegateProvider',
+      function ($translateProvider, $compileProvider, $sceDelegateProvider) {
         $translateProvider.useLoader('$translatePartialLoader', {
           urlTemplate: './app/translations/{lang}/{part}.json'
         });
+
+        $sceDelegateProvider.resourceUrlWhitelist([
+          // Allow same origin resource loads.
+          'self',
+          'http://*.mutokukai.com.ua/**'
+        ]);
+        $translateProvider.useSanitizeValueStrategy('escape');
 
         $translateProvider.preferredLanguage('ru-RU');
         $compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|ftp|mailto|tel|chrome-extension|skype):/);
