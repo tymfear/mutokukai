@@ -9,7 +9,6 @@
         });
 
         $sceDelegateProvider.resourceUrlWhitelist([
-          // Allow same origin resource loads.
           'self',
           'http://*.mutokukai.com.ua/**'
         ]);
@@ -18,11 +17,14 @@
         $translateProvider.preferredLanguage('ru-RU');
         $compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|ftp|mailto|tel|chrome-extension|skype):/);
       }])
-    .run(['$translate', '$cookies', '$translatePartialLoader',
-      function ($translate, $cookies, $translatePartialLoader) {
+    .run(['$translate', '$cookies', '$translatePartialLoader', '$rootScope',
+      function ($translate, $cookies, $translatePartialLoader, $rootScope) {
         setLanguage();
         $translatePartialLoader.addPart('common');
-        $translate.refresh();
+
+        $rootScope.$on('$translatePartialLoaderStructureChanged', function () {
+          $translate.refresh();
+        });
 
         function setLanguage() {
           var locale = $cookies.get('preferredLocale');

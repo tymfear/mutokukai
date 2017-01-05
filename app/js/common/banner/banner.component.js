@@ -13,6 +13,5 @@
     var ctrl = this;
 
     $translatePartialLoader.addPart('banner');
-    $translate.refresh();
   }
 })();

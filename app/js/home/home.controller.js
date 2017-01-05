@@ -11,7 +11,6 @@
 
     $translatePartialLoader.addPart('home');
     $translatePartialLoader.addPart('common');
-    $translate.refresh();
 
     home.classesSchedule = [
       {

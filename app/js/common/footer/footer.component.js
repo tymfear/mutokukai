@@ -14,7 +14,6 @@
 
     $translatePartialLoader.addPart('footer');
     $translatePartialLoader.addPart('common');
-    $translate.refresh();
 
     ctrl.currentYear = function(){
       return $filter('date')(new Date(), 'yyyy');

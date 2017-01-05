@@ -16,7 +16,6 @@
 
     $translatePartialLoader.addPart('nav');
     $translatePartialLoader.addPart('common');
-    $translate.refresh();
 
     ctrl.changeLocale = function (locale) {
       $translate.use(locale);
