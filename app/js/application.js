@@ -1,9 +1,9 @@
-(function () {
+(function(){
   'use strict';
-  
+
   angular.module('mutokukai', ['ui.router', 'pascalprecht.translate', 'ngCookies'])
     .config(['$translateProvider', '$compileProvider', '$sceDelegateProvider',
-      function ($translateProvider, $compileProvider, $sceDelegateProvider) {
+      function($translateProvider, $compileProvider, $sceDelegateProvider){
         $translateProvider.useLoader('$translatePartialLoader', {
           urlTemplate: './app/translations/{lang}/{part}.json'
         });
@@ -18,18 +18,18 @@
         $compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|ftp|mailto|tel|chrome-extension|skype):/);
       }])
     .run(['$translate', '$cookies', '$translatePartialLoader', '$rootScope',
-      function ($translate, $cookies, $translatePartialLoader, $rootScope) {
+      function($translate, $cookies, $translatePartialLoader, $rootScope){
         setLanguage();
         $translatePartialLoader.addPart('common');
 
-        $rootScope.$on('$translatePartialLoaderStructureChanged', function () {
+        $rootScope.$on('$translatePartialLoaderStructureChanged', function(){
           $translate.refresh();
         });
 
-        function setLanguage() {
+        function setLanguage(){
           var locale = $cookies.get('preferredLocale');
 
-          if (locale) { $translate.use(locale); }
+          if(locale) { $translate.use(locale); }
         }
       }]);
 })();
