@@ -21,6 +21,7 @@
       function($translate, $cookies, $translatePartialLoader, $rootScope){
         setLanguage();
         $translatePartialLoader.addPart('common');
+        $translate.refresh();
 
         $rootScope.$on('$translatePartialLoaderStructureChanged', function(){
           $translate.refresh();
