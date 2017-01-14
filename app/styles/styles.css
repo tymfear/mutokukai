@@ -38,10 +38,6 @@ article {
   position: relative;
 }
 
-.container-grey {
-  background-color: #373a3c;
-}
-
 .grey-section .h1, .grey-section .h2 {
   margin: 0;
 }
@@ -54,7 +50,6 @@ article {
 
 .banner-container {
   padding: 0;
-  margin-top: 66px;
 }
 
 .banner {
@@ -286,4 +281,8 @@ header.h1 {
 table {
   overflow-x: scroll;
   display: block;
+}
+
+.navbar-dark {
+  background-color: #373a3c;
 }

@@ -1,23 +1,23 @@
-<header class="navbar navbar-fixed-top navbar-dark bg-inverse">
-  <div class="container container-grey">
+<header class="navbar navbar-fixed-top navbar-dark">
+  <div class="container">
     <div class="nav-left">
       <div class="logo">
         <div class="logo-container hidden-md-down">
           <img ng-src="app/images/logo-red.svg" alt="Logo">
         </div>
-        <a class="navbar-brand text-xs-center" ui-sref="home">
+        <a class="navbar-brand text-xs-center" ui-sref="public.home">
           Mutokukai <span>{{"Kharkiv" | translate}}</span>
         </a>
       </div>
       <nav class="hidden-sm-down">
-        <ul class="nav navbar-nav">
+        <ul class="nav navbar-nav flex-row">
           <li class="nav-item">
-            <a ui-sref="home" ui-sref-active="active">
+            <a ui-sref="public.home" ui-sref-active="active">
               {{"Main_Menu_Item" | translate}}
             </a>
           </li>
           <li class="nav-item">
-            <a ui-sref="contacts" ui-sref-active="active">
+            <a ui-sref="public.contacts" ui-sref-active="active">
               {{"Contacts_Menu_Item" | translate}}
             </a>
           </li>
@@ -26,11 +26,11 @@
           <!--ui-sref-active="active">О нас</a>-->
           <!--</li>-->
           <li class="nav-item">
-            <a ui-sref="aikido"
+            <a ui-sref="public.aikido"
                ui-sref-active="active">{{"Aikido" | translate}}</a>
           </li>
           <li class="nav-item">
-            <a ui-sref="mutokukai"
+            <a ui-sref="public.mutokukai"
                ui-sref-active="active">{{"Mutokukai" | translate}}</a>
           </li>
         </ul>
@@ -55,16 +55,16 @@
 
   <div class="collapse navbar-collapse hidden-md-up" id="header-navbar-collapse">
     <ul class="nav navbar-nav text-xs-center">
-      <li ui-sref="home" ui-sref-active="active">
+      <li ui-sref="public.home" ui-sref-active="active">
         {{"Main_Menu_Item" | translate}}
       </li>
-      <li ui-sref="contacts" ui-sref-active="active">
+      <li ui-sref="public.contacts" ui-sref-active="active">
         {{"Contacts_Menu_Item" | translate}}
       </li>
-      <li ui-sref="aikido" ui-sref-active="active">
+      <li ui-sref="public.aikido" ui-sref-active="active">
         {{"Aikido" | translate}}
       </li>
-      <li ui-sref="mutokukai" ui-sref-active="active">
+      <li ui-sref="public.mutokukai" ui-sref-active="active">
         {{"Mutokukai" | translate}}
       </li>
       <li ng-click="$ctrl.changeLocale('ua-UA')" ng-if="$ctrl.currentLocale() == 'ru-RU'"
