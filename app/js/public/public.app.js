@@ -4,16 +4,12 @@ publicApp = angular.module('mutokukai.public', ['ui.router', 'pascalprecht.trans
   'use strict';
 
   publicApp
-    .config(['$translateProvider', '$compileProvider', '$sceDelegateProvider',
-      function($translateProvider, $compileProvider, $sceDelegateProvider) {
+    .config(['$translateProvider', '$compileProvider',
+      function($translateProvider, $compileProvider) {
         $translateProvider.useLoader('$translatePartialLoader', {
           urlTemplate: './app/translations/{lang}/{part}.json'
         });
 
-        $sceDelegateProvider.resourceUrlWhitelist([
-          'self',
-          'http://*.mutokukai.com.ua/**'
-        ]);
         $translateProvider.useSanitizeValueStrategy('escape');
 
         $translateProvider.preferredLanguage('ru-RU');

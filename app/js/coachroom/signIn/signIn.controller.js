@@ -3,7 +3,16 @@
 
   coachRoomApp.controller('SignInController', SignInController);
 
-  function SignInController() {
-    var signIn = this;
+  SignInController.$injector = ['authService'];
+
+  function SignInController(authService) {
+    var ctrl = this;
+
+    ctrl.signIn = function() {
+      authService.signIn(ctrl.email, ctrl.password)
+        .then(function(response) {
+        self.test = response.data;
+      })
+    };
   }
 })();

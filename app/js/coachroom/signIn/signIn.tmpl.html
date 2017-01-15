@@ -1,6 +1,26 @@
 <div class="container">
   <h1>Sign In</h1>
-  <form>
-
-  </form>
+  <div class="row">
+    <form class="col-sm-8 offset-2">
+      <div class="form-group">
+        <label for="email">Email address</label>
+        <input type="text"
+               class="form-control"
+               id="email"
+               aria-describedby="emailHelp"
+               placeholder="Enter email"
+               ng-model="signIn.email">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password"
+               class="form-control"
+               id="password"
+               placeholder="Password"
+               ng-model="signIn.password">
+      </div>
+      <button class="button btn-success" ng-click="signIn.signIn()">Login</button>
+    </form>
+  </div>
 </div>
