@@ -21,9 +21,9 @@
       userAuthorized = null;
     };
 
-    self.signIn = function(email, password) {
+    self.signIn = function(login, password) {
       var credentials = {
-        email: email,
+        login: login,
         password: password
       };
 

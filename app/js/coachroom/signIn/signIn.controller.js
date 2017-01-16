@@ -9,10 +9,9 @@
     var ctrl = this;
 
     ctrl.signIn = function() {
-      authService.signIn(ctrl.email, ctrl.password)
+      authService.signIn(ctrl.login, ctrl.password)
         .then(
           function(response) {
-            console.log(response);
             authService.signInUser();
             $state.go('coachroom.dashboard');
           },
