@@ -17,7 +17,9 @@
         function(result){
           $state.go('sign_in')
         }
-      )
+      ).catch(function(error) {
+        console.log(error.data);
+      })
     };
   }
 })();

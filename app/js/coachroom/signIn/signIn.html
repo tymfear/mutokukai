@@ -1,9 +1,9 @@
 <div class="container">
-  <h1>Sign In</h1>
-  <div class="row">
-    <form class="col-sm-8 offset-2">
+  <div class="col-sm-6 offset-3">
+    <h1>Вход в Тренерскую</h1>
+    <form>
       <div class="form-group">
-        <label for="email">Login</label>
+        <label for="login">Логин</label>
         <input type="text"
                class="form-control"
                id="login"
@@ -12,14 +12,16 @@
                ng-model="signIn.login">
       </div>
       <div class="form-group">
-        <label for="password">Password</label>
+        <label for="password">Пароль</label>
         <input type="password"
                class="form-control"
                id="password"
                placeholder="Password"
                ng-model="signIn.password">
       </div>
-      <button class="button btn-success" ng-click="signIn.signIn()">Login</button>
+      <button class="button btn-success" ng-click="signIn.signIn()">Войти
+      </button>
     </form>
   </div>
+</div>
 </div>

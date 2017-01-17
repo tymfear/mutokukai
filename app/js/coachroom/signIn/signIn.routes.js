@@ -7,7 +7,7 @@
         $stateProvider
           .state('sign_in', {
             url: '/sign_in',
-            templateUrl: 'app/js/coachroom/signIn/signIn.tmpl.html',
+            templateUrl: 'app/js/coachroom/signIn/signIn.html',
             controller: 'SignInController',
             controllerAs: 'signIn'
           })

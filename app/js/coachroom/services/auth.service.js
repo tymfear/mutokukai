@@ -47,14 +47,14 @@
     self.signOut = function(){
       var deferred = $q.defer();
 
-      $http.get(apiUrl + '/public/logout')
+      $http.post(apiUrl + '/public/logout')
         .then(
           function(result){
             $window.sessionStorage["userInfo"] = null;
             userInfo = null;
             deferred.resolve(result);
           },
-          function(){
+          function(error){
             deferred.reject(error);
           }
         );
