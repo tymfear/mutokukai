@@ -26,13 +26,16 @@
 
       var credentials = {
         login: login,
-        password: password
+        password: password,
+        headers: {
+          'Access-Control-Allow-Origin': 'http://localhost:3000'
+        }
       };
 
       $http.post(apiUrl + '/public/login', credentials)
         .then(
           function(response){
-            userInfo                           = { login: login };
+            userInfo                           = response.data;
             $window.sessionStorage['userInfo'] = JSON.stringify(userInfo);
             deferred.resolve(userInfo)
           },
