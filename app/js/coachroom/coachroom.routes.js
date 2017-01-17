@@ -1,4 +1,4 @@
-(function() {
+(function(){
   'use strict';
 
   coachRoomApp
@@ -8,15 +8,17 @@
           .state('coachroom', {
             url: '/api',
             abstract: true,
-            template: '<ui-view></ui-view>',
+            templateUrl: 'app/js/coachroom/coachroom.index.html',
             resolve: {
-              auth: ['authService', '$q', function(authService, $q) {
-                if(authService.isAuthorized()){
-                 return $q.when()
+              auth: ['authService', '$q', function(authService, $q){
+                var userInfo = authService.getUserInfo();
+
+                if(userInfo) {
+                  return $q.when(userInfo)
                 } else {
-                  return $q.reject()
+                  return $q.reject({ authenticated: false })
                 }
-              } ]
+              }]
             }
           })
       }]);

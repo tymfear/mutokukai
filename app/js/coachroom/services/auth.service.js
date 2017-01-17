@@ -1,33 +1,65 @@
-(function() {
+(function(){
   'use strict';
 
   coachRoomApp.service('authService', AuthService);
 
-  AuthService.$injector = ['$http', 'apiUrl'];
+  AuthService.$injector = ['$http', 'apiUrl', '$q', '$window'];
 
-  function AuthService($http, apiUrl) {
+  function AuthService($http, apiUrl, $q, $window){
     var self = this;
-    var userAuthorized;
+    var userInfo;
 
-    self.isAuthorized = function() {
-      return userAuthorized;
+    function init(){
+      if($window.sessionStorage["userInfo"]) {
+        userInfo = JSON.parse($window.sessionStorage["userInfo"]);
+      }
+    }
+
+    init();
+
+    self.getUserInfo = function(){
+      return userInfo;
     };
 
-    self.signInUser = function() {
-      userAuthorized = true;
-    };
+    self.signIn = function(login, password){
+      var deferred = $q.defer();
 
-    self.signOutUser = function() {
-      userAuthorized = null;
-    };
-
-    self.signIn = function(login, password) {
       var credentials = {
         login: login,
         password: password
       };
 
-      return $http.post(apiUrl + '/public/login', credentials);
+      $http.post(apiUrl + '/public/login', credentials)
+        .then(
+          function(response){
+            userInfo                           = { login: login };
+            $window.sessionStorage['userInfo'] = JSON.stringify(userInfo);
+            deferred.resolve(userInfo)
+          },
+          function(error){
+            deferred.reject(error);
+          }
+        );
+
+      return deferred.promise;
+    };
+
+    self.signOut = function(){
+      var deferred = $q.defer();
+
+      $http.get(apiUrl + '/public/logout')
+        .then(
+          function(result){
+            $window.sessionStorage["userInfo"] = null;
+            userInfo = null;
+            deferred.resolve(result);
+          },
+          function(){
+            deferred.reject(error);
+          }
+        );
+
+      return deferred.promise;
     }
   }
 })();

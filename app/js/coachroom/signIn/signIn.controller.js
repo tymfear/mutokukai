@@ -12,7 +12,6 @@
       authService.signIn(ctrl.login, ctrl.password)
         .then(
           function(response) {
-            authService.signInUser();
             $state.go('coachroom.dashboard');
           },
           function(error) {

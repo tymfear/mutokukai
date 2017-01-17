@@ -8,7 +8,7 @@
 
           .state('public', {
             abstract: true,
-            templateUrl: 'app/js/public/public.tmpl.html'
+            templateUrl: 'app/js/public/public.index.html'
           })
           .state('public.home', {
             url: '/home',
