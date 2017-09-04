@@ -36,8 +36,9 @@
         place: 'University',
         transport: 'train',
         schedule: {
-          2: '18:30',
-          4: '18:30'
+          1: '18:30',
+          3: '18:30',
+          5: '18:30'
         }
       },
       {

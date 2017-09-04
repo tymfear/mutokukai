@@ -10,12 +10,9 @@
       }
     });
 
-  NearestClassSchedule.$inject =
-    ['$translate', '$translatePartialLoader', 'nearestDateFilter',
-      'daysOfWeek', 'dateByDayFilter'];
+  NearestClassSchedule.$inject = [ 'nearestDateFilter', 'daysOfWeek', 'dateByDayFilter'];
 
-  function NearestClassSchedule($translate, $translatePartialLoader,
-                                nearestDate, daysOfWeek, dateByDay){
+  function NearestClassSchedule(nearestDate, daysOfWeek, dateByDay){
     var ctrl = this;
 
     ctrl.$onInit = function(){
