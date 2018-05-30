@@ -46,7 +46,7 @@
                 instructorId: 4
             },
             {
-                ageCategory: 'Дети',
+                ageCategory: 'Взрослые',
                 address: 'ул. Салтовское Шоссе, 174а, Спорт Школа',
                 schedule: 'Пн, Ср, Пт: 20:30 - 21:45',
                 instructorId: 4
