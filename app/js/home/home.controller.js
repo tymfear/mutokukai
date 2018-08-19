@@ -6,7 +6,7 @@
 
     HomeController.$inject = ['$translate', '$translatePartialLoader', '$interval'];
 
-    function HomeController($translate, $translatePartialLoader, $interval) {
+    function HomeController($translate, $translatePartialLoader) {
         var home = this;
 
         $translatePartialLoader.addPart('home');
@@ -29,15 +29,6 @@
                     1: '17:00',
                     3: '17:00',
                     5: '17:00'
-                }
-            },
-            {
-                place: 'University',
-                transport: 'train',
-                schedule: {
-                    1: '18:30',
-                    3: '18:30',
-                    5: '18:30'
                 }
             },
             {
