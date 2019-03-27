@@ -9,7 +9,7 @@
         instructors.list = [{
                 id: 1,
                 instructorName: 'Даудов Тимур',
-                instructorRank: '2-й дан Айкидо Айкикай',
+                instructorRank: '3-й дан Айкидо Айкикай',
                 skype: 'tymfear',
                 email: 'tymfear@gmail.com',
                 phones: ['38-066-212-90-26']
@@ -25,7 +25,7 @@
             {
                 id: 3,
                 instructorName: 'Луговой Николай',
-                instructorRank: '2-й кю Айкидо Айкикай',
+                instructorRank: '1-й дан Айкидо Айкикай',
                 email: 'varan_com@ukr.net',
                 phones: ['38-095-259-77-08']
             },
