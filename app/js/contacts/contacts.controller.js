@@ -18,7 +18,7 @@
         contacts.list = [{
                 ageCategory: 'Взрослые',
                 address: 'м. Пушкинская',
-                schedule: 'Пн, Ср, Пт, Сб: 6:30 - 8:15',
+                schedule: 'Пн, Ср, Пт: 6:30 - 8:15',
                 instructorId: instructorIds.Anatoliy
             },
             {
@@ -54,14 +54,10 @@
         ];
 
         contacts.getContacts = function() {
-            var result = [];
-
-            angular.forEach(contacts.list, function(contact) {
+           return contacts.list.map(function(contact) {
                 var instructor = instructors.getInstructor(contact.instructorId);
-                result.push(angular.extend(contact, instructor));
+                return angular.extend(contact, instructor);
             });
-
-            return result;
         };
     }
 })();

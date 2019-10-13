@@ -33,7 +33,6 @@
                 id: 4,
                 instructorName: 'Кривошей Анатолий',
                 instructorRank: '2-й дан Айкидо Айкикай',
-                email: 'tolik--z@mail.ru',
                 phones: ['38-050-592-92-09']
             }
         ];
