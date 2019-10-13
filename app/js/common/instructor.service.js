@@ -32,7 +32,7 @@
             {
                 id: 4,
                 instructorName: 'Кривошей Анатолий',
-                instructorRank: '2-й дан Айкидо Айкикай',
+                instructorRank: '3-й дан Айкидо Айкикай',
                 phones: ['38-050-592-92-09']
             }
         ];
