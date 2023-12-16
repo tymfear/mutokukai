@@ -50,6 +50,12 @@
                 address: 'ул. Салтовское Шоссе, 147 А, Спорт Школа',
                 schedule: 'Пн, Ср, Пт: 20:30 - 21:45',
                 instructorId: instructorIds.Anatoliy
+            },
+            {
+                ageCategory: 'Взрослые',
+                address: 'пр-т Героїв Харкова, 246-б, ДЮСШ №7',
+                schedule: 'Пн, Пт: 07:00 - 08:30',
+                instructorId: instructorIds.Anatoliy
             }
         ];
 
