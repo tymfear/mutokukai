@@ -67,6 +67,14 @@
                     5: '20:30'
                 }
             },
+            {
+                place: 'Maselskoho',
+                transport: 'train',
+                schedule: {
+                    2: '07:00',
+                    5: '07:00',
+                }
+            },
         ];
     }
 })();
