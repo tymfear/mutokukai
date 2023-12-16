@@ -14,7 +14,7 @@
         ]);
         $translateProvider.useSanitizeValueStrategy('escape');
 
-        $translateProvider.preferredLanguage('ru-RU');
+        $translateProvider.preferredLanguage('ua-UA');
         $compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|ftp|mailto|tel|chrome-extension|skype):/);
       }])
     .run(['$translate', '$cookies', '$translatePartialLoader', '$rootScope',
