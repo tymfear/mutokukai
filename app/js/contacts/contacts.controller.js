@@ -16,13 +16,13 @@
         };
 
         contacts.list = [{
-                ageCategory: 'Взрослые',
-                address: 'м. Пушкинская',
+                ageCategory: 'Дорослі',
+                address: 'м. Пушкінська',
                 schedule: 'Пн, Ср, Пт: 6:30 - 8:15',
                 instructorId: instructorIds.Anatoliy
             },
             {
-                ageCategory: 'Взрослые',
+                ageCategory: 'Дорослі',
                 address: 'пр-т Героїв Харкова, 246-б, ДЮСШ №7',
                 schedule: 'Пн, Пт: 07:00 - 08:30',
                 instructorId: instructorIds.Anatoliy
