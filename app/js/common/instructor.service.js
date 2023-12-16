@@ -25,14 +25,14 @@
             {
                 id: 3,
                 instructorName: 'Луговой Николай',
-                instructorRank: '1-й дан Айкидо Айкикай',
+                instructorRank: '2-й дан Айкидо Айкикай',
                 email: 'varan_com@ukr.net',
                 phones: ['38-095-259-77-08']
             },
             {
                 id: 4,
                 instructorName: 'Кривошей Анатолий',
-                instructorRank: '3-й дан Айкидо Айкикай',
+                instructorRank: '4-й дан Айкидо Айкикай',
                 phones: ['38-050-592-92-09']
             }
         ];
