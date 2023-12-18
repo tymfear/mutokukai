@@ -24,7 +24,7 @@
         {
                 ageCategory: 'Дорослі',
                 address: 'пр-т Героїв Харкова, 246-б, ДЮСШ №7',
-                schedule: 'Пн, Пт: 07:00 - 08:30',
+                schedule: 'Вт, Пт: 07:00 - 08:30',
                 instructorId: instructorIds.Anatoliy
         },
         {
