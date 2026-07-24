@@ -287,3 +287,44 @@ table {
   overflow-x: scroll;
   display: block;
 }
+.aikido-subtitle {
+  color: #891A1F;
+  font-family: 'SegoeUIItalic', sans-serif;
+  font-size: 15px;
+}
+
+main .lead {
+  font-size: 19px;
+  line-height: 1.6;
+}
+
+main p {
+  font-size: 16px;
+  line-height: 1.75;
+  margin-bottom: 16px;
+}
+
+.aikido-benefits {
+  background: #f7f7f7;
+  padding: 24px;
+}
+
+.aikido-benefits-list li {
+  position: relative;
+  padding: 10px 0 10px 28px;
+  border-bottom: 1px solid #e6e6e6;
+  font-size: 15px;
+}
+
+.aikido-benefits-list li:last-child {
+  border-bottom: none;
+}
+
+.aikido-benefits-list li::before {
+  content: "\2713";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  color: #891A1F;
+  font-weight: bold;
+}
