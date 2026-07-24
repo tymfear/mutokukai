@@ -9,7 +9,7 @@
         instructors.list = [{
                 id: 1,
                 instructorName: 'Даудов Тимур',
-                instructorRank: '3-й дан Айкідо Айкікай',
+                instructorRank: '4-й дан Айкідо Айкікай',
                 skype: 'tymfear',
                 email: 'tymfear@gmail.com',
                 phones: ['38-066-212-90-26']
