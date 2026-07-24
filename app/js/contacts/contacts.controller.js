@@ -15,12 +15,7 @@
             Anatoliy: 4
         };
 
-        contacts.list = [{
-                ageCategory: 'Дорослі',
-                address: 'м. Пушкінська',
-                schedule: 'Пн, Ср, Пт: 6:30 - 8:15',
-                instructorId: instructorIds.Anatoliy
-            },
+        contacts.list = [
         {
                 ageCategory: 'Дорослі',
                 address: 'пр-т Героїв Харкова, 246-б, ДЮСШ №7',
